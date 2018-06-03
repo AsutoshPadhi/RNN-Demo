@@ -8,8 +8,6 @@ data_size, vocab_size = len(data), len(chars)
 
 char_to_ix = { ch:i for i,ch in enumerate(chars) }
 ix_to_char = { i:ch for i,ch in enumerate(chars) }
-# print(char_to_ix)
-# print(ix_to_char)
 
 vector_for_char_a = np.zeros((vocab_size,1))
 vector_for_char_a[char_to_ix['a']] = 1
